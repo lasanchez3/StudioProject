@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Son del Palenque</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+              <div class="language-buttons">
+                <li><a href="#" class="language-button">eng</a></li>
+                <li><a href="#" class="language-button">spa</a></li>
+              </div>
+              
+              <div class="menu-buttons">
+                <li><a href="index.html" class="menu-button">About Us</a></li>
+                <li><a href="album.html" class="menu-button">New Album</a></li>
+                <li><a href="merchandise.html" class="menu-button">Merchandise</a></li>
+              </div>
+            </ul>
+          </nav>
+    </header>
+
+    <section class="merchandise-section">
+        <div class="merchandise-container">
+            <div class="merchandise-vertical">
+                <h2>MERCHANDISE</h2>
+            </div>
+            <div class="product-grid">
+                <div class="product">
+                  <img src="assets/Mug.png" alt="Mug">
+                  <p class="product-description">Start your day with Son del Palenque vibes. Perfect for your coffee and your love for music.</p>
+                  <button class="buy-now">Buy Now</button>
+                </div>
+                <div class="product">
+                  <img src="assets/Picture.png" alt="Picture">
+                  <p class="product-description">Decorate your space with this stunning album art from Son del Palenque.</p>
+                  <button class="buy-now">Buy Now</button>
+                </div>
+                <div class="product">
+                  <img src="assets/Poster.png" alt="Poster">
+                  <p class="product-description">A unique poster design to celebrate the music and culture of Son del Palenque.</p>
+                  <button class="buy-now">Buy Now</button>
+                </div>
+                <div class="product">
+                  <img src="assets/Hoodie.png" alt="Hoodie">
+                  <p class="product-description">Stay cozy and stylish with this hoodie featuring the Son del Palenque album cover.</p>
+                  <button class="buy-now">Buy Now</button>
+                </div>
+              </div>
+        </div> 
+    </section>
+
+    <form class="order-form center-content" method="POST">
+        <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message or Review:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+
+        <div class="form-actions">
+         <button type="submit" class="button button-primary">Place Order</button>
+         <button type="reset" class="button button-secondary">Reset Form</button>
+        </div>  
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Sound of Palenque. All rights reserved.</p>
+    </footer>
+</body>
+</html>
